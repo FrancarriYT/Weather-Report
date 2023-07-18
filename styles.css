@@ -310,7 +310,7 @@ body {
         justify-content:center;
         font-size: 40px;
         gap: 70px;
-        margin-top: 160px;
+        margin-top: 140px;
       }
     .weather-image {
       display: none;
@@ -351,9 +351,10 @@ body {
     }
   
     .video-container {
+      justify-content: center;
       padding-left: 2vw;
       max-width: 50vw;
-      width: 50vw;
+      width: 100vw;
     }
   
     .otrasCosas h1 {
