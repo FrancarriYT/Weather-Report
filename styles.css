@@ -298,6 +298,7 @@ body {
   
     .video-container {
       padding-left: 0;
+      max-width: 768px;
     }
   
     .otrasCosas h1 {
