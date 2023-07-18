@@ -257,7 +257,7 @@ body {
 
 /* Definición de ambas animaciones de las imágenes de Weather Report y su stand. */
 /* Ahora comenzaremos con los medias queries para que se vea bien en celu, no especificaré en esto, solo vean que hacen los comandos. */
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
 
     .navbar {
     
@@ -289,7 +289,7 @@ body {
     .navbar h1 {
       margin-left: 0;
       margin-top: 10px;
-      font-size: 4vw;
+      font-size: 6vw;
       text-align: center;
     }
   
