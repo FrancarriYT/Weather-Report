@@ -123,7 +123,7 @@
             if (respuesta.status == 404) {
                 document.querySelector(".error").style.display = "block";
                 document.querySelector(".weather").style.display = "none";
-                // Si da error al poner una ciudad por falta ortográfica, inexistencia o falta de datos en la base, aparece el mensaje de error y se oculta Weather.
+    // Si da error al poner una ciudad por falta ortográfica, inexistencia o falta de datos en la base, aparece el mensaje de error y se oculta Weather.
             } else {
                 var data = await respuesta.json();
                 // Sino, se hace todo el código y definimos data que es basicamente la extracción en archivo de la API.
