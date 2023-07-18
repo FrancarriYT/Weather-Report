@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/* Estilos de todo el CSS */
+body {
+    background-color: #002147;
+}
+ /* Fondo */
+.container {
+    background-color: #002147;
+    position: relative;
+}
+ /* Fondo del contenedor que contiene desde abajo de la Navbar hasta el final de las imágenes y el recuadro. */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7e1f1f;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+}
+ /* Damos efectos a la barra Responsive, colores, etc  */
+.navbar h1 {
+    font-family: 'Ysabeau SC', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+    justify-content: center;
+    margin-left: 250px;
+}
+
+.navbar h1 span {
+    text-shadow: 2px 2px 4px yellow;
+}
+    /* Este Span es para que las letras W y R de Weather Report de la Navbar se vean iluminadas. */
+.logo {
+    width: 200px;
+    overflow: hidden;
+}
+    /* Bloqueamos el Overflow del logo para que no aumente el tamaño de la navbar o se vaya para arriba. */
+.navbar li a {
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
+    /* Le damos características a los otros links. */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.weather-image {
+    position: absolute;
+    margin-top: 20px;
+    left: 20px;
+    width: 400px;
+    height: 800px;
+    animation: slideInLeft 1s;
+}
+    /* La imágen del cuerpo de weather y sus características. Incluyendo su animación que está definida abajo. */
+.stand-image {
+    position: absolute;
+    height: 700px;
+    right: 20px;
+    animation: slideInRight 1s;
+}
+    /* Mismo pero su stand y a la derecha. */
+.carta {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+    /* Definición del cuadro, tiene margen, degradado y text align center para mantener recuadrados las cosas y bonitas. */
+.buscador {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    /* Definicion de la sección de búsqueda */
+.buscador input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+    /* características del texto de fondo de esa barra de búsqueda, que se remueve al poner texto encima. */
+.buscador button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+ /* Características del botón. */
+.buscador button img {
+    width: 16px;
+}
+
+.weather-icono {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+    /* Más características y espaciados,etc.  */
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.detalles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humedad,
+.viento {
+    font-size: 28px;
+    margin-top: -6px;
+}
+ /* modificamos el tamaño de humedad y viento... */
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+ /* características de error y su display que permanece inactivo hasta que se da un error cuando se inserta mal la ciudad, etc. */
+
+.otrasCosas {
+    background: linear-gradient(135deg, #FFA500, #FF69B4);
+    padding: 20px;
+    margin-top: 600px;
+
+}
+
+/* Características de OtrasCosas, que es todo lo que está abajo del recuadro. */
+.video-container {
+    padding-left: 150px;
+    align-items: center;
+}
+
+/* Ponemos un poco de padding al Contenedor de videos para que esté un poquito más centrado. */
+.otrasCosas h1 {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Hacemos bonito y estético el H1 */
+.otrasCosas h2 {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(42, 5, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.otrasCosas p {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+.acerca-de p {
+    font-size: 35px;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Definición de ambas animaciones de las imágenes de Weather Report y su stand. */
+/* Ahora comenzaremos con los medias queries para que se vea bien en celu, no especificaré en esto, solo vean que hacen los comandos. */
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      max-height: none;
+    }
+  
+    .navbar h1 {
+      margin-left: 0;
+      margin-top: 10px;
+      font-size: 35px;
+      text-align: center;
+    }
+  
+    .navbar li {
+      margin-top: 10px;
+    }
+  
+    .weather-image {
+      display: none;
+    }
+  
+    .stand-image {
+      display: none;
+    }
+  
+    .carta {
+      margin-top: 30px;
+    }
+  
+    
+  
+    .weather-icono {
+      width: 100px;
+      margin-top: 20px;
+    }
+  
+    .weather h1 {
+      font-size: 50px;
+    }
+  
+    .weather h2 {
+      font-size: 30px;
+    }
+  
+    
+  
+    .otrasCosas {
+      margin-top: 80px;
+    }
+  
+    .video-container {
+      padding-left: 0;
+    }
+  
+    .otrasCosas h1 {
+      font-size: 50px;
+    }
+  
+    .otrasCosas h2 {
+      font-size: 30px;
+    }
+  
+    .acerca-de p {
+      font-size: 25px;
+    }
+  }
+  /* ¡FIN DEL CSS, MUCHAS GRACIAS POR VER! Arrivederci. */

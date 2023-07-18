@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Weather Report!</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Definición del documento + Enlazamiento del HTML. En este proyecto trabajaré con JavaScript interno. -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap" rel="stylesheet"> 
+    <!-- Importamos esto, que es la Fuente del logo de la página. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <!-- También esto, que será la fuente de los textos H2 seguramente -->
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="/Iconos/Weather_Report_Logo.png" alt="logo" class="logo">
+            <h1 class="titulo"> <span>W</span>eather <span>R</span>eport</h1>
+            <ul class="nav-links">
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#referencias">Referencias</a></li>
+                <li><a href="#acerca-de">Acerca de</a></li>
+            </ul>
+            <!-- Creamos la NAVBAR con temática de Weather Report -->
+        </div>
+        <img src="/Iconos/Weather_Report_Body.png" alt="Weather Report" class="weather-image">
+        <img src="/Iconos/Weather_Report_Stand.png" alt="Stand" class="stand-image">
+        <!-- Insertamos las imágenes de Weather Report! -->
+        <div class="carta">
+            <div class="buscador">
+                <input type="text" placeholder="Ingrese el nombre de la ciudad" spellcheck="false"> 
+                <button><img src="Iconos/buscar.png" alt="buscador"></button>
+            </div>
+            <!-- Creación de la caja y el botón de búsqueda.  -->
+            <div class="error">
+                <p>Nombre de ciudad inválido</p>
+            </div>
+            <!-- Este texto p, permanece oculto hasta que se inserte una ciudad/país inexistente o mal escrito.  -->
+            <div class="weather">
+                <img src="Iconos/lluvioso.png" alt="lluvioso" class="weather-icono">
+                <h1 class="temperatura">22°C</h1>
+                <h2 class="ciudad">New York</h2>
+                <!-- Creación de la clase weather que es toda la sección inferior del cuadro, el texto en temperatura y ciudad es un placeholder, el de HUmedad y viento debajo también lo es. -->
+                <div class="detalles">
+                    <div class="col">
+                        <img src="Iconos/humedad.png" alt="nivel humedad">
+                        <div>
+                            <p class="humedad">50%</p>
+                            <p>Humedad</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="Iconos/viento.png" alt="nivel viento">
+                        <div>
+                            <p class="viento">15 km/h</p>
+                            <p>Velocidad del viento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br> 
+    <!-- Finalización del recuadro, toda su lógica está debajo en la sección de Script -->
+    <div class= "otrasCosas">
+        <div class="informacion" id="informacion">
+            <h1>INFORMACIÓN DE ESTA PÁGINA</h1>
+            <p>Mi nombre es Francisco, y soy un programador estudiante de FullStack, esta es mi primera página web con API integrada, que, proviene del sitio web OpenWeather, de esta web extraje los datos en tiempo real y los pase por una depuración de Javascript y a grados Celcius (Por defecto venían en grados Kelvin).</p>
+            <br>
+            <p>Como podran notar, la estética de la página está basada en JoJo´s Bizarre Adventure, más especificamente Weather Report, solo para darle un toque distintivo.</p>
+            <br>
+            <p>PostData: Todo el contenido fue realizado por mí en base al contenido teórico y algunos tutoriales de extracción de API. La prueba principal son los comentarios insertados en el archivo HTML y CSS.</p>
+            <section id="videos">
+                <h2>Videos Destacados</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/K5MuY8oYN7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QCHWlzieNIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/G0pf27gvpUc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bYCk2udVFvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+ <!-- Simplemente un recuadro con información del propósito de la página. -->
+        <div class="referencias" id="referencias">
+            <h1>REFERENCIAS</h1>
+            <p>Bueno, vamos a evaluar las referencias de todo, otorgando los créditos debidos:</p>
+            <br>
+            <p> - OpenWeather (Portador de la API)</p>
+            <p> - JoJo´s Bizarre Adventure (Hiroiko Araki)</p>
+            <p> - KSUWABE (Una de las piezas fanart usadas en la página)</p>
+        </div>
+    <!-- div con referencias y créditos -->
+        <div class="acerca-de" id="acerca-de">
+            <h1>ACERCA DE</h1>
+            <br>
+            <p> - REGIÓN: Argentina </p>
+            <p> - GITHUB: https://github.com/FrancarriYT</p>
+            <p> - TWITTER: @Francarri1pro</p>
+            <p> - DISCORD: francarri</p>
+        </div>
+        <!-- Simplemente algunas de mis redes -->
+    </div>
+    <script>
+        const apiKey = "f5ce0e2533c764bc5707d1f165f325ce";
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+        // definimos las constantes de APIKEY y APIURL, la api key la conseguí solicitandola de OpenWeather.org, y la APIURL es la que en este caso usé.
+        // DATO IMPORTANTE: Para que el link funcione, al lado de q, debe ir el lugar, como está escrito en la constante respuesta de abajo.
+        // DATO IMPORTANTE 2: Lo mismo debemos hacer con la APIKEY, solo que será &appid=${apiKey}, como está demostrado en la constante respuesta. 
+        // DATO 3: Por normal, desde esa URL, los datos vienen en grados Kelvins, por eso en el link de apiUrl añadí para pasarlos a Celcius:
+        // "&units=metric&q=" , lo que cambia la información transportada de la API.
+        const barraDeBusqueda = document.querySelector(".buscador input"); 
+        const botonDeBusqueda = document.querySelector(".buscador button");
+        // Enlazamos las variables de buscador input y button, así que ahora extraerá de ahí los datos.
+        const weathericono = document.querySelector(".weather-icono");
+        // Simplemente definimos el ícono del clima ahora.
+        async function DetectarTemperatura(ciudad) {
+            const respuesta = await fetch(apiUrl + ciudad + `&appid=${apiKey}`);
+            if (respuesta.status == 404) {
+                document.querySelector(".error").style.display = "block";
+                document.querySelector(".weather").style.display = "none";
+                // Si da error al poner una ciudad por falta ortográfica, inexistencia o falta de datos en la base, aparece el mensaje de error y se oculta Weather.
+            } else {
+                var data = await respuesta.json();
+                // Sino, se hace todo el código y definimos data que es basicamente la extracción en archivo de la API.
+                console.log(data);
+
+                document.querySelector(".ciudad").innerHTML = data.name;
+                document.querySelector(".temperatura").innerHTML = Math.round(data.main.temp) + "°C";
+                document.querySelector(".humedad").innerHTML = data.main.humidity + "%";
+                document.querySelector(".viento").innerHTML = data.wind.speed + " km/h";
+                // Pasamos todas las estadísticas de la API a los datos del recuadro, reemplazandolos.
+                if (data.weather[0].main == "Clouds") {
+                    weathericono.src = "Iconos/nublado.png";
+                } else if (data.weather[0].main == "Clear") {
+                    weathericono.src = "Iconos/soleado.png";
+                } else if (data.weather[0].main == "Rain") {
+                    weathericono.src = "Iconos/lluvioso.png";
+                } else if (data.weather[0].main == "Drizzle") {
+                    weathericono.src = "Iconos/llovizna.png";
+                } else if (data.weather[0].main == "Mist") {
+                    weathericono.src = "Iconos/brumoso.png";
+                }
+                // Dependiendo el tipo de clima que sea se mostrará un ícono u otro.
+                document.querySelector(".weather").style.display = "block";
+                document.querySelector(".error").style.display = "none";
+                // Error desaparece o directamente no aparece si no estaba activo desde un inicio.
+                // Weather, la parte inferior del recuadro aparece si estaba oculta o permanece activa.
+            }
+        }
+
+        botonDeBusqueda.addEventListener("click", () => {
+            DetectarTemperatura(barraDeBusqueda.value);
+        });
+        // Añadimos que se ejecute la función al clickear en la lupita y... ¡Listo!.
+        // Espero les haya servido la explicación lógica para sus proyectos.
+        DetectarTemperatura();
+    </script>
+</body>
+</html>
