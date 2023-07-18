@@ -244,7 +244,7 @@ body {
 /* Ahora comenzaremos con los medias queries para que se vea bien en celu, no especificaré en esto, solo vean que hacen los comandos. */
 @media (max-width: 768px) {
     *{
-        flex: 1;
+        max-width: 768px;
     }
     .navbar {
       flex-direction: column;
