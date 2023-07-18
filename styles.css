@@ -284,7 +284,7 @@ body {
        
       }
     .navbar h1 {
-      margin-left: 0;
+      margin-left: -15px;
       margin-top: 10px;
       font-size: 6vw;
       text-align: center;
@@ -362,6 +362,7 @@ body {
   
     .acerca-de p {
       font-size: 25px;
+      max-width: 100vw;
     }
   }
   /* ¡FIN DEL CSS, MUCHAS GRACIAS POR VER! Arrivederci. */
