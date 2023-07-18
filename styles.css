@@ -18,10 +18,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0vh;
+    width: 100vw;
+    z-index: 9999;
     background-color: #7e1f1f;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-height: 200px;
+    max-height: 22vh;
 }
  /* Damos efectos a la barra Responsive, colores, etc  */
 .navbar h1 {
@@ -43,6 +47,9 @@ body {
     overflow: hidden;
 }
     /* Bloqueamos el Overflow del logo para que no aumente el tamaño de la navbar o se vaya para arriba. */
+    .celular-espacio {
+        display: none;
+    }
 .navbar li a {
     font-family: 'Comfortaa', cursive;
     font-size: 30px;
@@ -63,6 +70,14 @@ body {
     text-decoration: none;
 }
 
+.button-menu-toggle {
+    display: none;
+  }
+
+  .espacioNavbar{
+    padding-top: 25vh;
+    
+  }
 .weather-image {
     position: absolute;
     margin-top: 20px;
@@ -247,22 +262,59 @@ body {
         max-width: 768px;
     }
     .navbar {
-      flex-direction: column;
+    
       align-items: center;
       max-height: none;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      flex: 1;
     }
-  
+    .logo {
+        width: 25vw;
+    }
+    .nav-links {
+        display: none;
+    }
+    .button-menu-toggle {
+        display: block;
+        background-color: white;
+        border:none;
+        border-radius: 50px;
+        padding: 0 24px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 20px;
+       
+      }
     .navbar h1 {
       margin-left: 0;
       margin-top: 10px;
-      font-size: 35px;
+      font-size: 4vw;
       text-align: center;
     }
   
     .navbar li {
       margin-top: 10px;
     }
-  
+
+    .nav-links.nav-links-responsive{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        background-color: rgba(20, 20, 20, 0.95);
+
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        font-size: 40px;
+        gap: 70px;
+        margin-top: 27vh;
+      }
     .weather-image {
       display: none;
     }
@@ -297,8 +349,8 @@ body {
     }
   
     .video-container {
-      padding-left: 0;
-      max-width: 400px;
+      padding-left: 2vw;
+      max-width: 50vw;
     }
   
     .otrasCosas h1 {

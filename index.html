@@ -21,12 +21,17 @@
         <div class="navbar">
             <img src="Iconos/Weather_Report_Logo.png" alt="logo" class="logo">
             <h1 class="titulo"> <span>W</span>eather <span>R</span>eport</h1>
+            <br class="celular-espacio">
             <ul class="nav-links">
                 <li><a href="#informacion">Información</a></li>
                 <li><a href="#referencias">Referencias</a></li>
                 <li><a href="#acerca-de">Acerca de</a></li>
             </ul>
+            <button class="button-menu-toggle">Menu</button>
             <!-- Creamos la NAVBAR con temática de Weather Report -->
+        </div>
+        <div class="espacioNavbar">
+            <br>
         </div>
         <img src="Iconos/Weather_Report_Body.png" alt="Weather Report" class="weather-image">
         <img src="Iconos/Weather_Report_Stand.png" alt="Stand" class="stand-image">
@@ -158,6 +163,10 @@
         });
         // Añadimos que se ejecute la función al clickear en la lupita y... ¡Listo!.
         // Espero les haya servido la explicación lógica para sus proyectos.
+        document.querySelector("button.button-menu-toggle")
+        .addEventListener("click", function() {
+            document.querySelector(".nav-links").classList.toggle("nav-links-responsive");})
+
         DetectarTemperatura();
     </script>
 </body>
